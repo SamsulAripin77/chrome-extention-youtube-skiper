@@ -1,0 +1,17 @@
+{
+    "name": "Skipper",
+    "version": "1.0.0",
+    "description": "skipper",
+    "manifest_version": 3,
+    "author": "Samsul",
+    "content_scripts": [
+      {
+         "matches": [
+            "https://www.youtube.com/*"
+         ],
+         "js": [
+            "contentScript.js"
+         ]
+      }
+   ]
+}
