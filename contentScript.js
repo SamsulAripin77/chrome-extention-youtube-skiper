@@ -4,10 +4,12 @@ function speeder(){
     let skip = document.querySelector('button.ytp-skip-ad-button');
     let unskip = document.querySelector('.ytp-ad-text.ytp-ad-preview-text')
     let unskip2 = document.querySelector('.ytp-preview-ad__text')
-        if(add){
+
+
+    if(add){
 	  add.style.display = 'none';	
 	}
-        if(skip || unskip || unskip2){
+    if(skip || unskip || unskip2){
 	  videos.forEach(function(vid){
 	    	vid.muted = true;
 	    	vid.playbackRate = 10;	
@@ -20,6 +22,7 @@ function speeder(){
           skip.click();
           console.log('Feel Free Skiping: .......😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁') 	
 	}
+
 }
 
 setInterval(() => {
